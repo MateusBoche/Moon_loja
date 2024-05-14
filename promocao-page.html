@@ -72,6 +72,22 @@
 <li>
 <a href="sobre-page.html">Sobre</a>
 </li>
+<li><span class="menu-click"><i class="menu-arrow fa fa-plus"></i></span>
+    <a class="btn">Categorias<i class="fa fa-angle-down"></i></a>
+    <ul class="sub-menu">
+    <li><a href="t-shirt.html">T-shirts</a></li>
+    <li><a href="blazer.html">Blazers</a></li>
+    <li><a href="calcajeans.html">Calças Jeans</a></li>
+    <li><a href="bory.html">Borys</a></li>
+    <li><a href="CalcaAlfaiataria.html">Calça Alfaiataria</a></li>
+    <li><a href="CalcaPantalona.html">Calças Pantalona</a></li>
+    <li><a href="casaco.html">Casacos</a></li>
+    <li><a href="cropped.html">Croppeds</a></li>
+    <li><a href="saia.html">Saias</a></li>
+    <li><a href="short.html">Shorts</a></li>
+    <li><a href="vestido.html">Vestidos</a></li>
+    </ul>
+    </li>
 <li>
 <a href="promocao-page.html">Promoções</a>
 </li>
@@ -533,50 +549,114 @@ Tamanhos
 
 
 <footer class="site-footer">
-<div class="footer-middle bg-snow orange-theme">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="widget">
-<div class="widget-content">
-<figure class="widget-thumb footer-logo">
-<img src="assets/logo_Moon.jpeg" alt="">
-</figure>
-<p>Brilhe como a lua no céu noturno com as tendências deslumbrantes da Moon: onde o estilo encontra a magia feminina.</p>
-<ul class="address">
-<li><i class="pe-7s-map-marker"></i> Casa Vanessa, Santa Rita do Sapucai, Minas Gerais</li>
-<li><i class="pe-7s-call"></i> (35) numero do meu amor</li>
-<li> <i class="pe-7s-mail"></i> moon@gmail.com</li>
-</ul>
-<br>
-<ul class="social-link">
-<li><a href="https://www.instagram.com/moon_lojafeminina/"><i class="fab fa-instagram"></i></a></li>
-<li><a href="https://www.instagram.com/moon_lojafeminina/"><i class="fab fa-facebook"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="footer-bottom orange-theme">
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<p class="copyright-text">Copyright 2024 <a href="Moon_loja_feminina.html" class="color-orange">MOON</a> All rights Reserved.</p>
-</div>
-<div class="col-md-6">
-<ul class="footer-menu float-right">
-<li><a href="Moon_loja_feminina.html">Home</a></li>
-<li><a href="Moon_loja_feminina.html">Categories</a></li>
-<li><a href="Moon_loja_feminina.html">Support</a></li>
-<li><a href="Moon_loja_feminina.html">Terms and Condition</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</footer>
+    <div class="footer-middle bg-snow orange-theme">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="widget">
+    <div class="widget-content">
+    <figure class="widget-thumb footer-logo">
+    <img src="assets/logo_Moon.jpeg" alt="">
+    </figure>
+    <p>Brilhe como a lua no céu noturno com as tendências deslumbrantes da Moon: onde o estilo encontra a magia feminina.</p>
+    <ul class="address">
+    <li><i class="pe-7s-map-marker"></i> Casa Vanessa, Santa Rita do Sapucai, Minas Gerais</li>
+    <li><i class="pe-7s-call"></i> (35) numero do meu amor</li>
+    <li> <i class="pe-7s-mail"></i> moon@gmail.com</li>
+    </ul>
+    <br>
+    <ul class="social-link">
+    
+    <li><a href="https://www.instagram.com/moon_lojafeminina/"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://www.instagram.com/moon_lojafeminina/"><i class="fab fa-facebook"></i></a></li>
+    
+    </ul>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    <div class="footer-bottom orange-theme">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+    <p class="copyright-text">Copyright 2024 <a href="Moon_loja_feminina.html" class="color-orange">MOON</a> All rights Reserved.</p>
+    </div>
+    <div class="col-md-6">
+    <ul class="footer-menu float-right">
+    
+    
+    
+    <div style="background-color: #ffffff;">
+        <div class="bandeiras-align">
+                 <p style="font-size:13px; color: gray; text-align: center;">Formas de Pagamento.</p>
+                <img loading="tw" src="assets/400-icones-cartoes-de-credito.jpg" width="320px">
+                <style>
+        
+                  .bandeiras-align {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                  }
+        
+                  .bandeiras-align>p {
+                    margin-bottom: 0;
+                  }
+        
+                  @media (max-width: 640px){
+                    .bandeiras-align {
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                      margin-bottom: 48px;
+                    }
+                  }
+                  
+                </style>
+              </div>
+        
+    
+    
+    
+    <script>
+    
+        function formatState (state) {
+          if (!state.id) {
+            return state.text;
+          }
+          var baseUrl = "img"; //Na pasta em questão adicione as imagens. Cada imagem deverá ter o nome igual ao value correspodente no option
+          var $state = $(
+            '<span><img src="' + baseUrl + '/' + state.element.value.toLowerCase() + '.png" class="img-flag" /> ' + state.text + '</span>'
+          );
+          return $state;
+        };
+    
+        $("#frm_brand").select2({
+            templateResult: formatState
+        });
+    
+    </script>
+    
+    <style>
+    .img-flag
+    {
+        width:25px
+    }
+    </style>
+    
+    
+    
+    
+    
+    
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
 
 <script src="assets/jquery.min.js" type="text/javascript"></script>
 <script src="assets/popper.min.js" type="text/javascript"></script>
